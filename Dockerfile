@@ -10,6 +10,7 @@ RUN mkdir /gopath/bin
 WORKDIR /gopath/src/app
 RUN go build .
 RUN cp app /gopath/bin/app
+RUN go clean
 
 EXPOSE 8080
 CMD []
