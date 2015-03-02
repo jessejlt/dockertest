@@ -11,6 +11,3 @@ test:
 
 deps:
 	docker run -v $$(pwd)/vendor:/gopath/src/app/vendor -e GOPATH=/gopath/src/app/vendor --entrypoint /bin/bash -i -t dockertest
-
-clean:
-	@-rm go-test
