@@ -11,6 +11,7 @@ WORKDIR /gopath/src/app
 RUN go build .
 RUN cp app /gopath/bin/app
 RUN go clean
+RUN rm -rf vendor/pkg
 
 EXPOSE 8080
 CMD []

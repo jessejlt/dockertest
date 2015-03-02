@@ -11,7 +11,7 @@ Use
 * Build the container
 	- `make build`
 * Run the app in a development scenario
-	- `make dev`
+	- `make dev` then `curl -iX GET http://$(boot2docker ip 2>/dev/null):8080/bar`
 * Execute the unit tests
 	- `make test`
 * Vendor a dependency
