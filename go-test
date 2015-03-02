@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+GOPATH=/gopath/src/app/vendor
+cd /gopath/src/app && \
+	go test -v
